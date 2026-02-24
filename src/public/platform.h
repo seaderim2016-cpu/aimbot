@@ -54,13 +54,17 @@
 // #define PHNT_VERSION PHNT_WIN7 // Windows 7
 // #define PHNT_VERSION PHNT_WIN8 // Windows 8
 // #define PHNT_VERSION PHNT_WINBLUE // Windows 8.1
+#define PHNT_MODE PHNT_MODE_USER
 #define PHNT_VERSION PHNT_WIN11 // Windows 11
 
 // #define NOGDI
 #define NOMINMAX // FUCK YOU
 
-#include <phnt/phnt.h>
+#include <windows.h>
+#include <winternl.h>
+
 #include <phnt/phnt_windows.h>
+#include <phnt/phnt.h>
 
 
 #include <knownfolders.h>

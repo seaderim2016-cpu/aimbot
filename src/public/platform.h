@@ -61,7 +61,6 @@
 #define NOMINMAX // FUCK YOU
 
 #include <windows.h>
-#include <winternl.h>
 
 #include <phnt/phnt_windows.h>
 #include <phnt/phnt.h>

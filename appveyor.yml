@@ -1,0 +1,26 @@
+image: Visual Studio 2022
+platform: x86
+configuration: Release
+
+install:
+  - git submodule update --init --recursive
+
+build:
+  project: oxware.sln
+  verbosity: minimal
+
+artifacts:
+  - path: 'bin\Release\cheater.dll'
+    name: cheater.dll
+  - path: 'bin\Release\oxware.exe'
+    name: oxware.exe
+  - path: 'bin\Release\oxui.dll'
+    name: oxui.dll
+  - path: 'bin\Release\util.dll'
+    name: util.dll
+  - path: 'bin\Release\msvcp140.dll'
+    name: msvcp140.dll
+  - path: 'bin\Release\vcruntime140.dll'
+    name: vcruntime140.dll
+
+deploy: off
